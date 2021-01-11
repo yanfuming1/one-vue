@@ -1,0 +1,3 @@
+import recordContattoCommerciale from './components/recordContattoCommerciale'
+
+export default recordContattoCommerciale

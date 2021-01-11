@@ -1,0 +1,6 @@
+export const PROCESS_NAME = '流程实例'
+export const STARTEVENT_NAME = '开始任务'
+export const ENDEVENT_NAME = '结束任务'
+export const USERTEST_NAME = '用户任务'
+export const EXCLUSIVEGATEWAY_NAME = '排他网关'
+export const PARALLELGATEWAY_NAME = '并行网关'

@@ -1,0 +1,3 @@
+import projectPatrolRegistrationModule from './components/projectPatrolRegistrationModule'
+
+export default projectPatrolRegistrationModule

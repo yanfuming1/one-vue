@@ -1,0 +1,17 @@
+// 优化显示
+html, body {
+  margin: 0px;
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  #app {
+    @extend %full;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+.fina_applica_center {
+  box-shadow: 0 2px 12px 0 $color-border-shadow;
+  background: $color-bg3;
+  height: 100%;
+}

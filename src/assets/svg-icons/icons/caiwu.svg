@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1.6932mm" height="1.6932mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 169 169"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="703" font-variant="normal" style="fill-rule:nonzero" font-weight="400">
+	<font-face 
+		font-family="微软雅黑">
+		<font-face-src>
+			<font-face-name name="Microsoft YaHei"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="￥" horiz-adv-x="1000" d="M778.866 755.814l-202.672 -344.655 159.629 0 0 -76.1934 -185.945 0 0 -104.957 185.945 0 0 -77.2134 -185.945 0 0 -152.795 -95.6752 0 0 152.795 -193.084 0 0 77.2134 193.084 0 0 104.957 -193.084 0 0 76.1934 164.729 0 -200.632 344.655 107.813 0c93.8392,-171.155 150.653,-279.784 170.849,-325.683l1.93798 0c6.83395,18.8698 25.4998,57.0175 56.2016,114.341l114.851 211.342 101.999 0z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"微软雅黑";font-variant:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .str0 {stroke:#4A91FD;stroke-width:7.62}
+    .fil1 {fill:none}
+    .fil2 {fill:#4A91FD}
+    .fil0 {fill:#BCD4F8}
+    .fnt0 {font-weight:normal;font-size:98.04px;font-family:'微软雅黑'}
+   ]]>
+  </style>
+ </defs>
+ <g id="图层_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" x="14" y="9" width="129.109" height="91.7482" rx="16" ry="30"/>
+  <g id="_1314373692176">
+   <path class="fil1 str0" d="M142 40c5,-15 -12,-30 -29,-30l-82 0c0,0 -13,2 -17,18 -2,7 -2,19 -2,34 -1,27 0,60 0,74 0,13 12,20 20,21l102 0c0,0 18,-3 18,-21 0,-24 0,-49 0,-74 0,-11 -3,-13 -10,-22z"/>
+   <rect class="fil1 str0" x="47" y="38" width="89.2704" height="2.09169"/>
+  </g>
+  <text x="37" y="138"  class="fil2 fnt0">￥</text>
+ </g>
+</svg>

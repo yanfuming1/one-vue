@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21000 29700"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#4B91FF}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <rect x="-52105" y="-3833" width="49389" height="35983"/>
+   </clipPath>
+ </defs>
+ <g id="图层_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g style="clip-path:url(#id0)">
+   <image x="-52105" y="-3833" width="49389" height="35983" xlink:href="首页_Images\首页_ImgID1.png"/>
+  </g>
+  <path class="fil0" d="M10504 1427l-4107 3893c-903,856 -537,1362 220,1407l628 0c0,850 0,1701 0,2551 -27,659 245,1029 756,1017l1443 -35 39 -3062 2002 39 0 3062 1649 39c0,0 598,89 549,-745l0 -2905c0,0 768,11 993,-54 225,-65 440,-476 -90,-1006l-3493 -3690 -589 -511z"/>
+ </g>
+</svg>

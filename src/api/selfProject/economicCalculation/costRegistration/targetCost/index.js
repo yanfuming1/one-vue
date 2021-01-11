@@ -1,0 +1,1 @@
+import {get,post,putData,deleteData} from "../../../../plugin/axios";

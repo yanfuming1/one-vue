@@ -1,0 +1,3 @@
+import accountInformationHistory from './components/accountInformationHistory'
+
+export default accountInformationHistory

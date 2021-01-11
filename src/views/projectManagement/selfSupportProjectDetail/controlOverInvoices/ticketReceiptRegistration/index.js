@@ -1,0 +1,3 @@
+import ticketReceiptRegistrationList from './components/ticketReceiptRegistrationList.vue'
+
+export default ticketReceiptRegistrationList

@@ -1,0 +1,3 @@
+import prequalificationDocumentsPage from './components/prequalificationDocumentsPage.vue'
+
+export default prequalificationDocumentsPage
