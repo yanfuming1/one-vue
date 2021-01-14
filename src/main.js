@@ -30,6 +30,7 @@ axios.interceptors.request.use(config=>{
 Vue.prototype.$http=axios
 new Vue({
   el: '#app',
+  data:{},
   router,
   render: h => h(App)
 });
