@@ -39,11 +39,12 @@
 
         </el-table-column>
 
-        <el-table-column  label="操作" width="212">
+        <el-table-column  label="操作" width="300">
           <template slot-scope="scope">
             <!--修改，删除分配角色-->
+            <el-button size="mini" type="danger" icon="el-icon-delete" @click="tiaozhuan(scope.row.id)"></el-button>
             <el-button size="mini" type="primary" @click="showdata(scope.row)" icon="el-icon-edit"></el-button>
-            <el-button size="mini" type="danger" icon="el-icon-delete"></el-button>
+            <el-button size="mini" type="danger" icon="el-icon-delete" @click="delect(scope.row.id)"></el-button>
             <el-tooltip :enterable="false" effect="dark" content="分配角色" placement="right-start">
               <el-button size="mini" type="warning" icon="el-icon-setting"></el-button>
             </el-tooltip>
@@ -204,15 +205,20 @@ export default {
       this.getusers()
     },
     //监听状态switch
-    async userstate(data) {
-      const {data: res} = await this.$http.put('users/'+data.id+'/state/'+data.mg_state)
-      console.log(res)
-      if (res.meta.status!==200) {
-        //错误的话讲滑块回复。。
-        data.mg_state=!data.mg_state
-        return this.$message.error(res.meta.mesg);
-      }
-      this.$message .success("更新用户状态成功")
+     userstate(data) {
+      //const {data: res} = await this.$http.put('users/'+data.id+'/state/'+data.mg_state)
+      //console.log(res)
+
+      this.$http.put('users/'+data.id+'/state/'+data.mg_state).then((res)=>{
+        console.log(res)
+        if (res.data.meta.status!==200) {
+          //错误的话讲滑块回复。。
+          data.mg_state=!data.mg_state
+          return this.$message.error(res.meta.mesg);
+        }
+        this.$message .success(res.data.meta.msg)
+      })
+
     },
 
     addclose(){
@@ -248,12 +254,39 @@ export default {
       this.$refs.updataform.validate(async valid =>{
           if(!valid){return this.$message.error("校验不通过")}
           const {data:res}=await this.$http.put("/users/"+this.updata.id,{email:this.updata.email,mobile:this.updata.mobile})
+
         if(res.meta.status!==200){return this.$message.error("更新失败")}
         this.xiugaibutton=false
         this.getusers()
         this.$message.success("更新用户信息成功")
       })
+    },
+    //根据id删除用户
+    async delect(data){
+     await this.$confirm('是否要删除该用户?', '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      }).then(async () => {
+
+        const {data:res}=await this.$http.delete("users/"+data)
+       if(res.meta.status===200) {  this.getusers(); this.$message.success("删除成功")
+      }
+       else{
+         return this.$message.error("删除失败")
+       }
+
+      }).catch((err) => { //捕获所有错误，，点击取消为报错
+        this.$message({
+          type: 'info',
+          message: '已取消删除'
+        });
+      });
+    },
+    tiaozhuan(id){
+      this.$router.push("/shiyan/"+id)
     }
+
 
   }
 }
