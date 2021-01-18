@@ -42,11 +42,11 @@
         <el-table-column  label="操作" width="300">
           <template slot-scope="scope">
             <!--修改，删除分配角色-->
-            <el-button size="mini" type="danger" icon="el-icon-delete" @click="tiaozhuan(scope.row.id)"></el-button>
+
             <el-button size="mini" type="primary" @click="showdata(scope.row)" icon="el-icon-edit"></el-button>
             <el-button size="mini" type="danger" icon="el-icon-delete" @click="delect(scope.row.id)"></el-button>
-            <el-tooltip :enterable="false" effect="dark" content="分配角色" placement="right-start">
-              <el-button size="mini" type="warning" icon="el-icon-setting"></el-button>
+            <el-tooltip :enterable="false" effect="dark" content="分配角色"  placement="right-start">
+              <el-button size="mini" type="warning" @click="jurisdiction=true" icon="el-icon-setting"></el-button>
             </el-tooltip>
           </template>
         </el-table-column>
@@ -70,6 +70,18 @@
         </el-pagination>
       </div>
     </el-card>
+<!--      修改权限对话框-->
+    <el-dialog
+      title="提示"
+      :visible.sync="jurisdiction"
+      width="30%"
+      >
+      <span>这是一段信息</span>
+      <span slot="footer" class="dialog-footer">
+    <el-button @click="jurisdiction = false">取 消</el-button>
+    <el-button type="primary" @click="jurisdiction = false">确 定</el-button>
+  </span>
+    </el-dialog>
 
     <!--对话框
     visible.sync: 绑定布尔值（是否显示）
@@ -130,6 +142,7 @@
 <script>
 export default {
   name: "Users",
+  jurisdiction:false,//分配角色对话框
   data(){
     var checkemail=(rule, value, callback)=>{
       const emailyan=/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/
@@ -143,9 +156,10 @@ export default {
       if (mobilyan.test(value)){
         return callback()
       }
-      callback(new Error("请输入合法的手机"))
+      callback(new Error("请输入合法的手机1"))
     };
     return{
+      jurisdiction:false,
       queryInfo:{
         query:'',
         pagenum:1,

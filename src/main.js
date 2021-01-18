@@ -17,6 +17,7 @@ Vue.use(router);
 //Vue.use(VueAxios, axios)
 //配置请求的根路径
 
+
 axios.defaults.baseURL="http://timemeetyou.com:8889/api/private/v1/"
 
 //
