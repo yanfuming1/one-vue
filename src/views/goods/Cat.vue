@@ -34,6 +34,7 @@ export default {
         pagesize:5
       },
       catelist:[],//商品分类数据
+      total:0,//总数据条数
     }
   },
   created(){
@@ -43,7 +44,13 @@ export default {
     getdata(){
       this.$http.get("/categories",{params:this.querInfo}).then(res=>{
               let data=res.data
-
+               if(data.meta.status!==200){
+                return this.$message.error("请求失败")
+               }
+               //把数据列表复制
+               this.catelist=data.data.result
+              this.total=data.data.total
+        console.log(this.catelist,this.total)
       })
     }
   }
