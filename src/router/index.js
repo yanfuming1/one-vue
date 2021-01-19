@@ -7,6 +7,8 @@ import Users from "../views/user/Users";
 import shiyan from "../views/user/shiyan";
 import Rights from "../views/power/Rights";
 import Roles from "../views/power/Roles";
+
+import Cat from "../views/goods/Cat";
 Vue.use(Router)
 const router= new Router({
   mode:'history',
@@ -25,9 +27,8 @@ const router= new Router({
       {path:"/wecome",name:"wecome",component:Wecome},
       {path: "/users",name:"users",component: Users},
       {path:"/rights" ,component: Rights},
-      {path:"/roles" ,component: Roles}
-
-
+      {path:"/roles" ,component: Roles},
+      {path:"/categories",component: Cat}
     ]
   },
     {path:"/",redirect:"/login"},
